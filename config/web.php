@@ -18,6 +18,20 @@ return [
             'enablePrettyUrl' => true,
             'showScriptName' => false
         ],
+        'view' => [
+            'renders' => [
+                'md' => [
+                    'class' => 'app\utilities\MarkdownRenderer'
+                ]
+             ]
+        ],
+        'response' => [
+            'formatters' => [
+                'yaml' => [
+                    'class' => 'app\utilities\YamlResponseFormatter'
+                ]
+            ]
+        ]
     ],
     'modules' => [
         'gii' => [
