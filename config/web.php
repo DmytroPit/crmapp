@@ -23,7 +23,11 @@ return [
                 'md' => [
                     'class' => 'app\utilities\MarkdownRenderer'
                 ]
-             ]
+             ],
+            'theme' => [
+                'class' => yii\base\Theme::className(),
+                'basePath' => '@app/themes/snowy',
+            ]
         ],
         'response' => [
             'formatters' => [
