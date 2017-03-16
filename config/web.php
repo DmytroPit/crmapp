@@ -19,7 +19,7 @@ return [
             'showScriptName' => false
         ],
         'view' => [
-            'renders' => [
+            'renderers' => [
                 'md' => [
                     'class' => 'app\utilities\MarkdownRenderer'
                 ]
